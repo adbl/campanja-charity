@@ -1,9 +1,14 @@
 var CharityApp = (function() {
 
+  // FIXME: Maybe not the best place to put this, but it'll do for
+  // now.
+  // var UserId = 3333014;
+  var UserId = 2023663
+
   var getProducts = function() {
     $.ajax({
       type: 'GET',
-      url: '../products.json',
+      url: '/users/' + UserId + '/items',
       success: function(data, status, xhr) {
         var source = $('#product-template').html(),
               template = Handlebars.compile(source),
