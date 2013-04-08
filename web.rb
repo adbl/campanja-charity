@@ -22,5 +22,5 @@ get '/users/:id/items' do
     }
   end
   content_type 'application/json'
-  {"products" => products}.to_json
+  {"products" => products[0..20]}.to_json
 end
