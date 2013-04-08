@@ -15,6 +15,7 @@ get '/users/:id/items' do
     {
       "headline" => x[:short_description],
       "productImage" => x[:thumbnail_link],
+      "productUrl" => x[:item_link],
       "currentBid" => x[:max_bid],
       "hoursLeft" => 0,
       "minutesLeft" => 0,
