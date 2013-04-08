@@ -2,8 +2,8 @@ var CharityApp = (function() {
 
   // FIXME: Maybe not the best place to put this, but it'll do for
   // now.
-  // var UserId = 3333014;
-  var UserId = 2023663
+  var UserId = 3333014; // 'Production' user
+  // var UserId = 2023663; // 'Test' user
 
   var getProducts = function() {
     $.ajax({
