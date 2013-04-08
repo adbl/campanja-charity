@@ -1,9 +1,11 @@
 require 'open-uri'
 require 'savon'
 
+# FIXME: Could be cool to use method_missing with the SOAP API
 class Tradera
 
   # Credentials for Campanja test app
+  # TODO: Move this outside the module!
   AppId = ENV['APP_ID']
   ServiceKey = ENV['SERVICE_KEY']
   PublicKey = ENV['PUBLIC_KEY']
