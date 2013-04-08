@@ -21,14 +21,16 @@
 
   <script id="product-template" type="text/x-handlebars-template">
     <div class="pin">
-      <a href="single.html"><img src="{{productImage}}"></a>
+      <a href="#"><img src="{{productImage}}"></a>
       <div class="content">
-        <h5><a href="single.html">{{headline}}</a></h5>
+        <h5><a href="">{{headline}}</a></h5>
         <div class="meta-info">
           <p class="current-bid"><span class="icon in-product on-left">&#59148;</span>{{currentBid}} kr</p>
           <p class="current-bid"><span class="icon in-product on-left">&#128340;</span>{{hoursLeft}}h {{minutesLeft}}m</p>
         </div>
-        <a href="single.html" class="button primary small radius tiny">Place a bid</a>
+        <a href="#" class="button primary small radius tiny">Place a bid</a>
+        <a href="#" class="share-on-facebook">Share This Link on Facebook</a>
+        <a href="#" class="share-on-twitter">Share This on Twitter</a>
       </div>
     </div>
   </script>
@@ -85,9 +87,6 @@
   <script src="javascripts/vendor/underscore.js"></script>
   <script src="javascripts/vendor/handlebars.js"></script>
   <script src="javascripts/app.js"></script>
-  <script>
-    CharityApp.getProducts();
-  </script>
 
 </body>
 </html>
