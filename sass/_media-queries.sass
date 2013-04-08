@@ -1,0 +1,47 @@
+/* We use this media query to add styles to any device that supports media queries */
+// @media only screen
+
+/* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
+@media only screen and (min-width: 400px)
+  .auction-columns
+    -moz-column-count: 2
+    -webkit-column-count: 2
+    column-count: 2
+
+@media only screen and (min-width: 600px)
+  .auction-columns
+    -moz-column-count: 3
+    -webkit-column-count: 3
+    column-count: 3
+
+@media only screen and (min-width: 800px)
+  .auction-columns
+    -moz-column-count: 4
+    -webkit-column-count: 4
+    column-count: 4
+
+/* Used to alter styles for screens at least 1280px wide. */
+// @media only screen and (min-width: 1280px)
+//   .auction-columns
+//     -moz-column-count: 4
+//     -moz-column-gap: 10px
+//     -moz-column-fill: auto
+//     -webkit-column-count: 4
+//     -webkit-column-gap: 10px
+//     -webkit-column-fill: auto
+//     column-count: 4
+//     column-gap: 10px
+//     column-fill: auto
+
+/* Used to alter styles for screens at least 1440px wide. */
+// @media only screen and (min-width: 1440px)
+
+/* Apply styles to screens in landscape orientation */
+// @media only screen and (orientation: landscape)
+
+/* Apply styles to screens in portrait orientation */
+// @media only screen and (orientation: portrait)
+
+/* We also use Modernizr to add a .touch class to the body when applicable */
+/* You can prepend this class to anything and it will style only for touch devices */
+// .touch .your-element

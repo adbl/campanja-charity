@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Campanja Super Mario</title>
+
+  <link rel="stylesheet" href="stylesheets/normalize.css" />
+
+  <link rel="stylesheet" href="stylesheets/app.css" />
+
+
+  <script src="javascripts/vendor/custom.modernizr.js"></script>
+  <script type="text/javascript" src="//use.typekit.net/hmu6msi.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+
+  <script id="product-template" type="text/x-handlebars-template">
+    <div class="pin">
+      <a href="single.html"><img src="{{productImage}}"></a>
+      <div class="content">
+        <h5><a href="single.html">{{headline}}</a></h5>
+        <div class="meta-info">
+          <p class="current-bid"><span class="icon in-product on-left">&#59148;</span>{{currentBid}} kr</p>
+          <p class="current-bid"><span class="icon in-product on-left">&#128340;</span>{{hoursLeft}}h {{minutesLeft}}m</p>
+        </div>
+        <a href="single.html" class="button primary small radius tiny">Place a bid</a>
+      </div>
+    </div>
+  </script>
+
+  <header>
+  	<div class="row">
+  		<div class="large-12 columns">
+        <img src="images/campanja-original-logo.png">
+  		</div>
+  	</div>
+  </header>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h3><span class="icon h3 on-left">&#59140;</span>The what?</h3>
+      <p>At Campanja, we value the communities in which we live and work. As well as providing cutting edge big management technology in the Search Engine Marketing industry, we’re also focused on supporting some amazing programs and initiatives. From sponsoring events to providing much needed assistance to charities, we’re dedicated to getting out into the community and making a real difference to people’s lives.</p>
+      <div class="row">
+        <div class="large-6 columns">
+          <h5>Why?</h5>
+          <p>Nullam vel enim eros. Donec vehicula ante id urna elementum eu luctus neque convallis. Curabitur porttitor ultrices mi, at pellentesque nisl ultricies mollis. Maecenas posuere risus eget diam pellentesque mattis tempus non metus. Phasellus fermentum, massa eget ultrices sodales, velit sem consequat odio, in elementum ligula urna ac tortor.</p>
+        </div>
+        <div class="large-6 columns">
+          <h5>How?</h5>
+          <p>In id urna non risus auctor aliquam vel id tortor. Vivamus magna leo, fermentum ac hendrerit eget, aliquet nec eros. Mauris dictum, mauris condimentum mattis condimentum, leo nunc feugiat risus, sed gravida turpis augue quis augue. Suspendisse vitae urna id mi dictum egestas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	<div class="row">
+		<div class="large-12 columns">
+			<h3><span class="icon h3 on-left">&#128214;</span>The stuff</h3>
+
+			<div class="row auction-columns"></div>
+
+		</div>
+
+	</div>
+
+  <footer>
+    <div class="row">
+      <div class="large-12 columns">
+        <p>&copy; Campanja AB 2013</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+
+  <script src="javascripts/vendor/underscore.js"></script>
+  <script src="javascripts/vendor/handlebars.js"></script>
+  <script src="javascripts/app.js"></script>
+  <script>
+    CharityApp.getProducts();
+  </script>
+
+</body>
+</html>

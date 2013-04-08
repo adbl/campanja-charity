@@ -1,0 +1,86 @@
+{"products": [
+  {
+    "headline": "Nice thing",
+    "productImage": "http://placehold.it/239x210",
+    "currentBid": "143",
+    "hoursLeft": "12",
+    "minutesLeft": "28"
+  },
+  {
+    "headline": "Second nice thing",
+    "productImage": "http://placehold.it/239x170",
+    "currentBid": "17",
+    "hoursLeft": "12",
+    "minutesLeft": "28"
+  },
+  {
+    "headline": "Nice thing",
+    "productImage": "http://placehold.it/239x212",
+    "currentBid": "143",
+    "hoursLeft": "12",
+    "minutesLeft": "28"
+  },
+  {
+    "headline": "Second nice thing",
+    "productImage": "http://placehold.it/239x198",
+    "currentBid": "17",
+    "hoursLeft": "12",
+    "minutesLeft": "28"
+  },
+  {
+    "headline": "Nice thing",
+    "productImage": "http://placehold.it/239x135",
+    "currentBid": "143",
+    "hoursLeft": "12",
+    "minutesLeft": "28"
+  },
+  {
+    "headline": "Second nice thing",
+    "productImage": "http://placehold.it/239x167",
+    "currentBid": "17",
+    "hoursLeft": "12",
+    "minutesLeft": "28"
+  },
+  {
+    "headline": "Nice thing",
+    "productImage": "http://placehold.it/239x179",
+    "currentBid": "143",
+    "hoursLeft": "12",
+    "minutesLeft": "28"
+  },
+  {
+    "headline": "Second nice thing",
+    "productImage": "http://placehold.it/239x234",
+    "currentBid": "17",
+    "hoursLeft": "12",
+    "minutesLeft": "28"
+  },
+  {
+    "headline": "Nice thing",
+    "productImage": "http://placehold.it/239x123",
+    "currentBid": "143",
+    "hoursLeft": "12",
+    "minutesLeft": "28"
+  },
+  {
+    "headline": "Second nice thing",
+    "productImage": "http://placehold.it/239x170",
+    "currentBid": "17",
+    "hoursLeft": "12",
+    "minutesLeft": "28"
+  },
+  {
+    "headline": "Nice thing",
+    "productImage": "http://placehold.it/239x210",
+    "currentBid": "143",
+    "hoursLeft": "12",
+    "minutesLeft": "28"
+  },
+  {
+    "headline": "Second nice thing",
+    "productImage": "http://placehold.it/239x170",
+    "currentBid": "17",
+    "hoursLeft": "12",
+    "minutesLeft": "28"
+  }
+]}
