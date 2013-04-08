@@ -49,6 +49,7 @@
 @import media-queries
 
 +font-face("Entypo", font-files("entypo.eot", "entypo.svg", "entypo.ttf", "entypo.woff"))
++font-face("EntypoSocial", font-files("entypo-social.eot", "entypo-social.svg", "entypo-social.ttf", "entypo-social.woff"))
 
 header,
 footer
@@ -56,12 +57,12 @@ footer
   background: #eee
 
 header
-  padding: 20px 0
-  margin-bottom: 20px
+  padding: 1.3em 0
+  margin-bottom: 1.3em
   border-bottom: 1px solid #ddd
 
 footer
-  padding: 20px 0 0
+  padding: 1.3em 0 0
   border-top: 1px solid #ddd
 
 h1, h2, h3, h4, h5, h6
@@ -83,8 +84,16 @@ h1, h2, h3, h4, h5, h6
     font-size: 1.8em
     color: #999
     margin-left: 0.3em
+  &.is-social
+    font-family: "EntypoSocial"
+    font-size: 5em
+    line-height: 50px
 
-.current-bid
+.meta-row
   font-size: 1.7em
   font-weight: 100
-  margin-bottom: 10px
+  margin-bottom: 0
+  &:last-child
+    margin-bottom: 0.5em
+
+

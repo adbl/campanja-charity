@@ -24,10 +24,6 @@ var CharityApp = (function() {
             html = template(context);
           $('.auction-columns').append(html);
         });
-
-        $('.share-on-facebook').on('click', shareOnFacebook);
-
-        $('.share-on-twitter').on('click', shareOnTwitter);
       },
       error: function(xhr, errorType, error) {
         console.log(['now there was error', xhr, errorType, error]);
@@ -35,20 +31,33 @@ var CharityApp = (function() {
     });
   };
 
+  var openSharePopup = function(shareUrl) {
+    window.open(shareUrl, 'Share', 'toolbar=0,status=0,width=680,height=400');
+  };
+
   var shareOnFacebook = function(e) {
     e.preventDefault();
-    console.log('http://www.facebook.com/sharer.php?u=http://localhost:8080');
+    var u = location.href,
+        t = document.title
+    openSharePopup('http://www.facebook.com/sharer.php?u='+
+      encodeURIComponent(u)+'&t='+encodeURIComponent(t));
   };
 
   var shareOnTwitter = function(e) {
     e.preventDefault();
-    console.log("http://twitter.com/share?text=Support%20charity!%20And%20buy%20new%20things!&url=http://localhost:8080");
+    var u = 'http://hej.com',
+        text = "Support charity, and buy something nice!";
+    openSharePopup('http://twitter.com/share?text='+encodeURIComponent(text)+
+      '&url='+encodeURIComponent(u));
   };
 
   return {
-    getProducts: getProducts
+    getProducts: getProducts,
+    shareOnFacebook: shareOnFacebook,
+    shareOnTwitter: shareOnTwitter
   };
 })();
 
 CharityApp.getProducts();
-
+$('.share-on-facebook').on('click', CharityApp.shareOnFacebook);
+$('.share-on-twitter').on('click', CharityApp.shareOnTwitter);
