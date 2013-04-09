@@ -8,4 +8,4 @@ i.e. if there's a file `/public/css/style.css` in the repository, that
 file will made be available at `/css/style.css`.
 
 To interface with Tradera some environment variables with API keys are
-required, consult your local Campanjero for help.
+required, consult your local Campañero for help.
