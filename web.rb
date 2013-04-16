@@ -14,7 +14,7 @@ get '/users/:id/items' do
   products = response[:item].map do |x|
     {
       "headline" => x[:short_description],
-      "productImage" => x[:thumbnail_link],
+      "productImage" => get_image(x),
       "productUrl" => x[:item_link],
       "currentBid" => x[:max_bid],
       "hoursLeft" => 0,
@@ -23,4 +23,10 @@ get '/users/:id/items' do
   end
   content_type 'application/json'
   {"products" => products[0..20]}.to_json
+end
+
+def get_image(item)
+    image   = item[:image_links]
+    image &&= image[:string]
+    [*image][0]
 end
