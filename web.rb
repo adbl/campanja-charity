@@ -2,7 +2,7 @@ require 'json'
 # External libs
 require 'sinatra'
 # Internal modules
-require 'tradera.rb'
+require './tradera.rb'
 
 get '/' do
   redirect '/index.html'
