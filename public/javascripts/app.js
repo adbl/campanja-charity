@@ -10,6 +10,7 @@ var CharityApp = (function() {
       type: 'GET',
       url: '/users/' + UserId + '/items',
       success: function(data, status, xhr) {
+        $('.ajax-loader').hide();
         var source = $('#product-template').html(),
               template = Handlebars.compile(source),
               self = this;
@@ -26,6 +27,8 @@ var CharityApp = (function() {
         });
       },
       error: function(xhr, errorType, error) {
+        $('.ajax-loader').hide();
+        $('.auction-columns').append('now there was error');
         console.log(['now there was error', xhr, errorType, error]);
       }
     });
