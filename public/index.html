@@ -45,16 +45,46 @@
   	</div>
   </header>
 
-  <div class="row">
-    <div class="large-6 columns">
-      <h1>Campanja Spring Cleaning Charity Drive</h1>
+  <div data-magellan-expedition="fixed" class="header__extended">
+    <div class="row">
+      <div class="large-12 columns">
+        <dl class="sub-nav">
+          <dd data-magellan-arrival="what" class="active"><a href="#what">What?</a></dd>
+          <dd data-magellan-arrival="stuff"><a href="#stuff">The Stuff</a></dd>
+          <dd data-magellan-arrival="whyhow"><a href="#whyhow">Why and How</a></dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <a name="what"></a>
+
+  <div class="row" data-magellan-destination="what">
+    <div class="large-12 columns">
+      <h1>Gadgets For Good!</h1>
     </div>
     <div class="large-6 columns">
       <h3><span class="icon h3 on-left">&#59140;</span>What?</h3>
       <p>Spring is approaching and our annual spring clean has begun in anticipation of the upcoming warmth and sunshine. We found that we have collectively accumulated a wide variety of computers, hardware and various gadgets that require new homes, and so, we have decided that we will auction our unwanted treasure and have all proceeds go to the charity of your choice. You will be able to choose between these 5 reputable charities that are having a real impact to both the domestic and international community.</p>
     </div>
   </div>
-  <div class="row">
+
+  <a name="stuff"></a>
+
+	<div class="row" data-magellan-destination="stuff">
+		<div class="large-12 columns">
+			<h3><span class="icon h3 on-left">&#128214;</span>The stuff</h3>
+			<div class="row auction-columns">
+        <div class="ajax-loader">
+          <img src="images/ajax-loader.gif">
+        </div>
+      </div>
+		</div>
+	</div>
+
+  <a name="whyhow"></a>
+
+  <div class="row" data-magellan-destination="whyhow">
     <div class="large-6 columns">
       <h5>Why?</h5>
       <p>At Campanja, we value the communities in which we live and work. As well as providing cutting edge big management technology in the Search Engine Marketing industry, we’re also focused on supporting some amazing programs and initiatives. From sponsoring events to providing much needed assistance to charities, we’re dedicated to getting out into the community and making a real difference to people’s lives.</p>
@@ -95,6 +125,8 @@
   '.js><\/script>')
   </script>
 
+  <script src="javascripts/foundation/foundation.js"></script>
+  <script src="javascripts/foundation/foundation.magellan.js"></script>
   <script src="javascripts/vendor/underscore.js"></script>
   <script src="javascripts/vendor/handlebars.js"></script>
   <script src="javascripts/app.js"></script>

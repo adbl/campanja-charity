@@ -59,5 +59,6 @@ var CharityApp = (function() {
 })();
 
 CharityApp.getProducts();
+$(document).foundation();
 $('.share-on-facebook').on('click', CharityApp.shareOnFacebook);
 $('.share-on-twitter').on('click', CharityApp.shareOnTwitter);
