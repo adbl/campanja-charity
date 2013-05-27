@@ -61,7 +61,7 @@ var CharityApp = (function() {
   };
 })();
 
-CharityApp.getProducts();
 $(document).foundation();
+CharityApp.getProducts();
 $('.share-on-facebook').on('click', CharityApp.shareOnFacebook);
 $('.share-on-twitter').on('click', CharityApp.shareOnTwitter);
